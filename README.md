@@ -2,8 +2,14 @@
 
 Roots is an awesome starting point for Wordpress theming. But as I begin to move development away from using Bootstrap, I am maintaining this to help that process. I want to eat my cake and have it too.
 
+Based off of Roots version 7.0.1
+
 * Removed: Bootstrap specific Gruntfile tasks
 * Removed: Bootstrap LESS files, Roots starter selectors
+
+ToDo:
+* Change: From LESS to SASS
+* Remove: Bootstrap classes from Roots nav
 
 ======================== Roots Starter Theme Documentation follows:
 
