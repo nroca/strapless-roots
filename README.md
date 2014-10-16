@@ -1,3 +1,9 @@
+# Roots Starter Theme Without Bootstrap
+
+Roots is an awesome starting point for Wordpress theming. But as I begin to move development away from using Bootstrap, I am maintaining this to help that process. I want to eat my cake and have it too.
+
+======================== Roots Starter Theme Documentation follows:
+
 # [Roots Starter Theme](http://roots.io/)
 [![devDependency Status](https://david-dm.org/roots/roots/dev-status.svg)](https://david-dm.org/roots/roots#info=devDependencies)
 
