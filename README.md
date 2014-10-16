@@ -2,6 +2,15 @@
 
 Roots is an awesome starting point for Wordpress theming. But as I begin to move development away from using Bootstrap, I am maintaining this to help that process. I want to eat my cake and have it too.
 
+Based off of Roots version 7.0.1
+
+* Removed: Bootstrap specific Gruntfile tasks
+* Removed: Bootstrap LESS files, Roots starter selectors
+
+ToDo:
+* Change: From LESS to SASS
+* Remove: Bootstrap classes from Roots nav
+
 ======================== Roots Starter Theme Documentation follows:
 
 # [Roots Starter Theme](http://roots.io/)
@@ -78,8 +87,8 @@ From the command line:
 
 When completed, you'll be able to run the various Grunt commands provided from the command line.
 
-**N.B.** 
-You will need write permission to the global npm directory to install `grunt-cli` and `bower`. You will also likely have to be using an elevated terminal or prefix the command with `sudo`, i.e., `sudo npm install -g grunt-cli bower`. 
+**N.B.**
+You will need write permission to the global npm directory to install `grunt-cli` and `bower`. You will also likely have to be using an elevated terminal or prefix the command with `sudo`, i.e., `sudo npm install -g grunt-cli bower`.
 
 We also advise against running as root user. NPM deliberately uses limited privileges when executing certain commands such as those included in the Roots post-install process, and when this happens to the root user, any file system objects that are not expressly writable by the root user will fail to write during the execution of the command. These might include directories such as `/var/www` or `/home/someotheruser`. If you're running as root and have problems, don't say we didn't warn you.
 
