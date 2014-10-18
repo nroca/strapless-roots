@@ -1,9 +1,9 @@
 {
-  "name": "roots",
-  "version": "7.0.1",
-  "homepage": "http://roots.io",
+  "name": "strapless-roots",
+  "version": "1.0.0",
+  "homepage": "http://nathanroca.com",
   "authors": [
-    "Ben Word <ben@benword.com>"
+    "Nathan Roca <me@nathanroca.com>"
   ],
   "license": "MIT",
   "private": true,
@@ -15,7 +15,6 @@
   "dependencies": {
     "modernizr": "2.8.2",
     "jquery": "1.11.1",
-    "bootstrap": "3.2.0",
     "respond": "1.4.2"
   }
 }

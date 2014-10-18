@@ -6,9 +6,9 @@ Based off of Roots version 7.0.1
 
 * Removed: Bootstrap specific Gruntfile tasks
 * Removed: Bootstrap LESS files, Roots starter selectors
+* Change: From LESS to SASS
 
 ToDo:
-* Change: From LESS to SASS
 * Remove: Bootstrap classes from Roots nav
 
 ======================== Roots Starter Theme Documentation follows:

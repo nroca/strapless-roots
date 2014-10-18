@@ -22,30 +22,26 @@ module.exports = function(grunt) {
         '!assets/**/*.min.*'
       ]
     },
-    less: {
+    sass: {
       dev: {
         files: {
           'assets/css/main.css': [
-            'assets/less/main.less'
+            'assets/sass/main.scss'
           ]
         },
         options: {
-          compress: false,
-          // LESS source map
-          // To enable, set sourceMap to true and update sourceMapRootpath based on your install
-          sourceMap: true,
-          sourceMapFilename: 'assets/css/main.css.map',
-          sourceMapRootpath: '/app/themes/roots/'
+          style: 'expanded',
+          compass: true
         }
       },
       build: {
         files: {
           'assets/css/main.min.css': [
-            'assets/less/main.less'
+            'assets/sass/main.scss'
           ]
         },
         options: {
-          compress: true
+          style: 'compressed'
         }
       }
     },
@@ -112,12 +108,12 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      less: {
+      sass: {
         files: [
-          'assets/less/*.less',
-          'assets/less/**/*.less'
+          'assets/sass/*.scss',
+          'assets/sass/**/*.scss'
         ],
-        tasks: ['less:dev', 'autoprefixer:dev']
+        tasks: ['sass:dev', 'autoprefixer:dev']
       },
       js: {
         files: [
@@ -148,13 +144,13 @@ module.exports = function(grunt) {
   ]);
   grunt.registerTask('dev', [
     'jshint',
-    'less:dev',
+    'sass:dev',
     'autoprefixer:dev',
     'concat'
   ]);
   grunt.registerTask('build', [
     'jshint',
-    'less:build',
+    'sass:build',
     'autoprefixer:build',
     'uglify',
     'modernizr',
